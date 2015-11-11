@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>One on dba-team - musings on database administration</title>
+    <link>http://localhost:1313/tags/one/</link>
+    <description>Recent content in One on dba-team - musings on database administration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-AU</language>
+    <managingEditor>nathan@dba-team.com (Nathan Jolly)</managingEditor>
+    <webMaster>nathan@dba-team.com (Nathan Jolly)</webMaster>
+    <copyright>(c) 2015 Nathan Jolly</copyright>
+    <lastBuildDate>Tue, 10 Nov 2015 13:37:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/one/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>intro</title>
+      <link>http://localhost:1313/post/2015/11/10/intro/</link>
+      <pubDate>Tue, 10 Nov 2015 13:37:15 +0800</pubDate>
+      <author>nathan@dba-team.com (Nathan Jolly)</author>
+      <guid>http://localhost:1313/post/2015/11/10/intro/</guid>
+      <description>&lt;p&gt;The first posts you&amp;rsquo;ll see on this site are titled &amp;laquo;&lt;a href=&#34;http://localhost:1313/tags/week_in_review/&#34;&gt;This week in the DBA universe&lt;/a&gt;&amp;raquo;.&lt;/p&gt;
+
+&lt;p&gt;Which is incorrect on a number of levels, not least:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;They are collated somewhere between weekly and monthly&lt;/li&gt;
+&lt;li&gt;They focus on SQL Server and MySQL news, which are a very, very small subset of the DBA universe&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However, it&amp;rsquo;s the best title I&amp;rsquo;ve got for now.&lt;/p&gt;
+
+&lt;p&gt;Pythian&amp;rsquo;s &lt;a href=&#34;http://www.pythian.com/blog/about-log-buffer/&#34;&gt;log buffer&lt;/a&gt; has a great set of curated content focused on database development and design, but I hope this is helpful for people who&amp;rsquo;d like to keep up to date with what&amp;rsquo;s new with database software and toolsets themselves.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

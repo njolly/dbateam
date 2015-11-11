@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dba-team - musings on database administration</title>
+    <link>http://dba-team.com/</link>
+    <description>Recent content on dba-team - musings on database administration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-AU</language>
+    <managingEditor>nathan@dba-team.com (Nathan Jolly)</managingEditor>
+    <webMaster>nathan@dba-team.com (Nathan Jolly)</webMaster>
+    <copyright>(c) 2015 Nathan Jolly</copyright>
+    <lastBuildDate>Tue, 10 Nov 2015 20:25:30 +0800</lastBuildDate>
+    <atom:link href="http://dba-team.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>This week in the DBA Universe - 2015-11-10</title>
+      <link>http://dba-team.com/post/2015/11/10/week_in_review/</link>
+      <pubDate>Tue, 10 Nov 2015 20:25:30 +0800</pubDate>
+      <author>nathan@dba-team.com (Nathan Jolly)</author>
+      <guid>http://dba-team.com/post/2015/11/10/week_in_review/</guid>
+      <description>
+
+&lt;p&gt;There&amp;rsquo;s a lot of activity in the MySQL world over the past couple of weeks in the wake of MySQL 5.7&amp;rsquo;s GA release.&lt;/p&gt;
+
+&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kendra Little (BrentOzar.com) points out that the StackExchange dataset makes an excellent tool for testing (or developing) &lt;a href=&#34;http://www.brentozar.com/archive/2015/11/interviewing-how-to-test-tsql-writing-skills/&#34;&gt;TSQL writing skills&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Microsoft have released &lt;a href=&#34;http://blogs.technet.com/b/dataplatforminsider/archive/2015/10/28/sql-server-2016-community-technology-preview-3-0-is-available.aspx&#34;&gt;SQL Server 2016 CTP3&lt;/a&gt;. Lots of strong improvements including analytics, the cloud, encryption, JSON, temporal tables and in-memory, though one would imagine that Standard edition servers aren&amp;rsquo;t going to see most of this&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vitor Oliveira (Oracle) offers some &lt;a href=&#34;http://mysqlhighavailability.com/multi-threaded-replication-performance-in-mysql-5-7/&#34;&gt;benchmarks on MySQL 5.7&amp;rsquo;s Multi-threaded slave feature&lt;/a&gt;, and the numbers are looking very promising&lt;/li&gt;
+&lt;li&gt;Peter Laursen (Webyog) points out that using MySQL 5.7&amp;rsquo;s &lt;a href=&#34;http://blog.webyog.com/2015/11/09/beware-virtual-columns-may-render-backups-unusable/&#34;&gt;computed columns could cause problems for non-native backup/restore tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SeveralNines are continuing their excellent &amp;laquo;&lt;a href=&#34;http://www.severalnines.com/blog-tags/dba&#34;&gt;Become a MySQL DBA&lt;/a&gt;&amp;raquo; blog series with tips on analysing the &lt;a href=&#34;http://www.severalnines.com/blog/become-mysql-dba-blog-series-understanding-mysql-error-log&#34;&gt;MySQL Error Log&lt;/a&gt; and &lt;a href=&#34;http://www.severalnines.com/blog/become-mysql-dba-blog-series-galera-cluster-diagnostic-logs&#34;&gt;Galera diagnostic logs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s been a bit of coverage of Aurora:
+
+&lt;ul&gt;
+&lt;li&gt;Marco Tusa (Pythian) indicates that a &lt;a href=&#34;http://www.tusacentral.net/joomla/index.php/mysql-blogs/175-aws-aurora-benchmarking-blast-or-splash.html&#34;&gt;Galera setup can generally outperform a similarly specced Aurora instance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Yves Trudeau (Percona) offers a &lt;a href=&#34;https://www.percona.com/blog/2015/11/02/first-look-rds-aurora/&#34;&gt;&amp;laquo;first look&amp;raquo; at RDS Aurora&lt;/a&gt;, including pros/cons and some speculation about how it might work&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Percona offers up a bunch of new releases, including &lt;a href=&#34;https://www.percona.com/blog/2015/11/09/percona-toolkit-2-2-16-now-available/&#34;&gt;Toolkit 2.2.16&lt;/a&gt;, &lt;a href=&#34;https://www.percona.com/blog/2015/11/05/percona-server-5-6-27-75-0-is-now-available/&#34;&gt;Percona Server 5.6.27&lt;/a&gt;, and &lt;a href=&#34;https://www.percona.com/blog/2015/11/05/percona-server-5-5-46-37-5-is-now-available/&#34;&gt;Percona Server 5.5.46&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mark Leith offers slides from a talk about the &lt;a href=&#34;http://www.markleith.co.uk/2015/10/29/slides-for-mysql-sys-schema-deep-dive-oracle-openworld-2015/&#34;&gt;MySQL sys schema&lt;/a&gt;, which is now bundled into MySQL 5.7 and available separately for other version&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Chris Ueland of MaxCDN offers a nice summary of &lt;a href=&#34;http://www.scalescale.com/the-stack-behind-netflix-scaling/&#34;&gt;Netflix&amp;rsquo;s technology stack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HighScalability points out the Hasso-Plattner-Institut&amp;rsquo;s &lt;a href=&#34;http://hpi.de/naumann/projects/rdbms-genealogy.html&#34;&gt;Genealogy of Relational Database Management Systems&lt;/a&gt;. This is really cool&lt;/li&gt;
+&lt;li&gt;Researchers Daniel Abadi and Jose Faleiro propose a theorum about tradeoffs with distributed NoSQL systems that they call &lt;a href=&#34;http://dbmsmusings.blogspot.com.au/2015/10/why-mongodb-cassandra-hbase-dynamodb_28.html&#34;&gt;the FIT theorum&lt;/a&gt;: Fairness, Isolation or Throughput (pick any two)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://dba-team.com/about/</link>
+      <pubDate>Tue, 10 Nov 2015 17:49:58 +0800</pubDate>
+      <author>nathan@dba-team.com (Nathan Jolly)</author>
+      <guid>http://dba-team.com/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;about-nathan&#34;&gt;About Nathan&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m a full-time database administrator, and have had the privilege of working with a broad number of database technologies during my career. I currently spend most of my time working with MySQL and Microsoft SQL Server.&lt;/p&gt;
+
+&lt;p&gt;I hold professional-level certifications in DB2, Microsoft SQL Server and MySQL.&lt;/p&gt;
+
+&lt;p&gt;I generally take a &amp;laquo;horses for courses&amp;raquo; approach where database technology is concerned - I&amp;rsquo;m far more interested in getting the job done than to wax philosophical about why one particular technology is best.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Introduction</title>
+      <link>http://dba-team.com/post/2015/11/10/intro/</link>
+      <pubDate>Tue, 10 Nov 2015 17:37:15 +0800</pubDate>
+      <author>nathan@dba-team.com (Nathan Jolly)</author>
+      <guid>http://dba-team.com/post/2015/11/10/intro/</guid>
+      <description>&lt;p&gt;The first posts you&amp;rsquo;ll see on this site are titled &amp;laquo;&lt;a href=&#34;http://dba-team.com/tags/week_in_review/&#34;&gt;This week in the DBA universe&lt;/a&gt;&amp;raquo;.&lt;/p&gt;
+
+&lt;p&gt;Which is incorrect on a number of levels, not least:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;They are collated somewhere between weekly and monthly&lt;/li&gt;
+&lt;li&gt;They focus on SQL Server and MySQL news, which are a very, very small subset of the DBA universe&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However, it&amp;rsquo;s the best title I&amp;rsquo;ve got for now.&lt;/p&gt;
+
+&lt;p&gt;Pythian&amp;rsquo;s &lt;a href=&#34;http://www.pythian.com/blog/about-log-buffer/&#34;&gt;log buffer&lt;/a&gt; has a great set of curated content focused on database development and design, but I hope this is helpful for people who&amp;rsquo;d like to keep up to date with what&amp;rsquo;s new with database software and toolsets themselves.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
