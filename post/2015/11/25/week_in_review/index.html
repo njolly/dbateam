@@ -5,28 +5,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>This week in the DBA Universe - 2015-11-10  &middot; dba-team - musings on database administration</title>
+  <title>This week in the DBA Universe - 2015-11-25  &middot; dba-team - musings on database administration</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="description" content="MySQL 5.7 followup, Percona software releases, and some questions raised about Aurora" />
+<meta name="description" content="SQL Server 2012 SP3, high TPS in MySQL 5.7, and possible licensing concerns for Oracle SE/SE1 users" />
 
 <meta name="keywords" content="week_in_review, dba, ">
 
 
-<meta property="og:title" content="This week in the DBA Universe - 2015-11-10  &middot; dba-team - musings on database administration ">
+<meta property="og:title" content="This week in the DBA Universe - 2015-11-25  &middot; dba-team - musings on database administration ">
 <meta property="og:site_name" content="dba-team - musings on database administration"/>
-<meta property="og:url" content="http://dba-team.com/post/2015/11/10/week_in_review/" />
+<meta property="og:url" content="http://dba-team.com/post/2015/11/25/week_in_review/" />
 <meta property="og:locale" content="en-AU">
 
 
 <meta property="og:type" content="article" />
-<meta property="og:description" content="MySQL 5.7 followup, Percona software releases, and some questions raised about Aurora"/>
-<meta property="og:article:published_time" content="2015-11-10T20:25:30&#43;08:00" />
-<meta property="og:article:modified_time" content="2015-11-10T20:25:30&#43;08:00" />
+<meta property="og:description" content="SQL Server 2012 SP3, high TPS in MySQL 5.7, and possible licensing concerns for Oracle SE/SE1 users"/>
+<meta property="og:article:published_time" content="2015-11-25T07:26:32&#43;08:00" />
+<meta property="og:article:modified_time" content="2015-11-25T07:26:32&#43;08:00" />
 
   
     
@@ -42,20 +42,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "This week in the DBA Universe - 2015-11-10",
+    "headline": "This week in the DBA Universe - 2015-11-25",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2015-11-10",
-    "description": "MySQL 5.7 followup, Percona software releases, and some questions raised about Aurora",
-    "wordCount":  285 
+    "datePublished": "2015-11-25",
+    "description": "SQL Server 2012 SP3, high TPS in MySQL 5.7, and possible licensing concerns for Oracle SE\/SE1 users",
+    "wordCount":  372 
   }
 </script>
 
 
 
-<link rel="canonical" href="http://dba-team.com/post/2015/11/10/week_in_review/" />
+<link rel="canonical" href="http://dba-team.com/post/2015/11/25/week_in_review/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://dba-team.com/touch-icon-144-precomposed.png">
 <link href="http://dba-team.com/favicon.png" rel="icon">
@@ -146,13 +146,13 @@
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="text-center">
 
-    <h1>This week in the DBA Universe - 2015-11-10
+    <h1>This week in the DBA Universe - 2015-11-25
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2015-11-10">10 Nov, 2015</time>
+  <time datetime="2015-11-25">25 Nov, 2015</time>
 </small>
 
 
@@ -160,7 +160,7 @@
     &middot; by Nathan J
   
   &middot; Read in about 2 min
-  &middot; (285 Words)
+  &middot; (372 Words)
 </small>
 
 
@@ -183,37 +183,32 @@
   <div class="container content">
   
 
-<p>There&rsquo;s a lot of activity in the MySQL world over the past couple of weeks in the wake of MySQL 5.7&rsquo;s GA release.</p>
+<p>I expect things will quiet down on the database news front as North American companies take some time off for Thanksgiving and head towards the Christmas holidays.</p>
 
 <h2 id="sql-server">SQL Server</h2>
 
 <ul>
-<li>Kendra Little (BrentOzar.com) points out that the StackExchange dataset makes an excellent tool for testing (or developing) <a href="http://www.brentozar.com/archive/2015/11/interviewing-how-to-test-tsql-writing-skills/">TSQL writing skills</a></li>
-<li>Microsoft have released <a href="http://blogs.technet.com/b/dataplatforminsider/archive/2015/10/28/sql-server-2016-community-technology-preview-3-0-is-available.aspx">SQL Server 2016 CTP3</a>. Lots of strong improvements including analytics, the cloud, encryption, JSON, temporal tables and in-memory, though one would imagine that Standard edition servers aren&rsquo;t going to see most of this</li>
+<li><a href="http://blogs.technet.com/b/dataplatforminsider/archive/2015/11/24/sql-server-2012-sp3-is-now-available.aspx">SQL Server 2012 SP3</a> is available! Kendra Little (BrentOzar.com) points out some <a href="http://www.brentozar.com/archive/2015/11/sql-server-2012-sp3-adds-memory-grant-and-performance-features/">great additions to DMVs</a> which have been backported from SQL Server 2016</li>
+<li>Brent Ozar had a neat list of things that are worth checking if your SQL Server <a href="http://www.brentozar.com/archive/2015/11/why-is-sql-server-slow-sometimes-but-only-sometimes/">suddenly becomes slow</a></li>
+<li>The SQL Server DBCC SHOW_STATISTICS command is going to be even useful with this step-by-step guide on <a href="https://www.mssqltips.com/sqlservertip/4092/how-to-interpret-sql-server-dbcc-showstatistics-output/">how to interpret the results</a></li>
 </ul>
 
 <h2 id="mysql">MySQL</h2>
 
 <ul>
-<li>Vitor Oliveira (Oracle) offers some <a href="http://mysqlhighavailability.com/multi-threaded-replication-performance-in-mysql-5-7/">benchmarks on MySQL 5.7&rsquo;s Multi-threaded slave feature</a>, and the numbers are looking very promising</li>
-<li>Peter Laursen (Webyog) points out that using MySQL 5.7&rsquo;s <a href="http://blog.webyog.com/2015/11/09/beware-virtual-columns-may-render-backups-unusable/">computed columns could cause problems for non-native backup/restore tools</a></li>
-<li>SeveralNines are continuing their excellent &laquo;<a href="http://www.severalnines.com/blog-tags/dba">Become a MySQL DBA</a>&raquo; blog series with tips on analysing the <a href="http://www.severalnines.com/blog/become-mysql-dba-blog-series-understanding-mysql-error-log">MySQL Error Log</a> and <a href="http://www.severalnines.com/blog/become-mysql-dba-blog-series-galera-cluster-diagnostic-logs">Galera diagnostic logs</a></li>
-<li>There&rsquo;s been a bit of coverage of Aurora:
-
-<ul>
-<li>Marco Tusa (Pythian) indicates that a <a href="http://www.tusacentral.net/joomla/index.php/mysql-blogs/175-aws-aurora-benchmarking-blast-or-splash.html">Galera setup can generally outperform a similarly specced Aurora instance</a></li>
-<li>Yves Trudeau (Percona) offers a <a href="https://www.percona.com/blog/2015/11/02/first-look-rds-aurora/">&laquo;first look&raquo; at RDS Aurora</a>, including pros/cons and some speculation about how it might work</li>
-</ul></li>
-<li>Percona offers up a bunch of new releases, including <a href="https://www.percona.com/blog/2015/11/09/percona-toolkit-2-2-16-now-available/">Toolkit 2.2.16</a>, <a href="https://www.percona.com/blog/2015/11/05/percona-server-5-6-27-75-0-is-now-available/">Percona Server 5.6.27</a>, and <a href="https://www.percona.com/blog/2015/11/05/percona-server-5-5-46-37-5-is-now-available/">Percona Server 5.5.46</a></li>
-<li>Mark Leith offers slides from a talk about the <a href="http://www.markleith.co.uk/2015/10/29/slides-for-mysql-sys-schema-deep-dive-oracle-openworld-2015/">MySQL sys schema</a>, which is now bundled into MySQL 5.7 and available separately for other version</li>
+<li>Dimitri Kravtchuk (Oracle) has an interesting comparison of the <a href="http://dimitrik.free.fr/blog/archives/2015/11/mysql-performance-what-is-odd-with-1m-qps-claimed-by-mariadb-101.html">1M+ QPS metrics</a> posted for both MySQL 5.7 and MariaDB 10.1. Possibly worth a read just for the comments discussion between Dimitri and Mark Callaghan</li>
+<li><a href="https://www.percona.com/blog/2015/11/12/logical-mysql-backup-tool-mydumper-0-9-1-now-available/">MyDumper 0.9.1 is available</a> - this is quite a major release and includes a number of features that may make it a viable alternative to mysqldump for logical backups</li>
+<li>If you&rsquo;re looking to poke around MySQL 5.7 but don&rsquo;t have the inclination to spin up your own VM / container, you can look into <a href="http://www.db4free.net/">db4free.net</a>, which now offers MySQL 5.7 databases free for testing</li>
+<li>Vadim Tkachenko (Percona) offers more <a href="https://www.percona.com/blog/2015/11/16/amazon-aurora-looking-deeper/">third-party analysis</a> of Amazon&rsquo;s Aurora service. There are a few interesting risks which I hadn&rsquo;t considered</li>
+<li>Shlomi Noach (booking.com) has a great, if slightly biased (he maintains an alternative product) run-down of <a href="http://code.openark.org/blog/mysql/thoughts-on-maxscale-automated-failover-and-orchestrator">limitations in MariaDB&rsquo;s MaxScale product</a></li>
 </ul>
 
 <h2 id="general">General</h2>
 
 <ul>
-<li>Chris Ueland of MaxCDN offers a nice summary of <a href="http://www.scalescale.com/the-stack-behind-netflix-scaling/">Netflix&rsquo;s technology stack</a></li>
-<li>HighScalability points out the Hasso-Plattner-Institut&rsquo;s <a href="http://hpi.de/naumann/projects/rdbms-genealogy.html">Genealogy of Relational Database Management Systems</a>. This is really cool</li>
-<li>Researchers Daniel Abadi and Jose Faleiro propose a theorum about tradeoffs with distributed NoSQL systems that they call <a href="http://dbmsmusings.blogspot.com.au/2015/10/why-mongodb-cassandra-hbase-dynamodb_28.html">the FIT theorum</a>: Fairness, Isolation or Throughput (pick any two)</li>
+<li>ITNews reports on a December 1 <a href="http://www.itnews.com/article/3004953/use-oracles-database-watch-out-for-this-dec-1-deadline.html">cease-sale of Oracle SE and SE1</a> (in favour of SE2) which may have serious licensing implications for some users. If you use Oracle you might want to take a look</li>
+<li>Robert Harris (StorageMojo) offers <a href="http://storagemojo.com/2015/11/16/mr-dells-eyes-fixed-on-the-rear-view-mirror/">some analysis</a> on Dell&rsquo;s recent acquisition of EMC. This industry seems to be endlessly cyclical but even for on-premise compute the trend seems to be towards deploying on commodity baremetal rather than VMs on expensive storage, so I&rsquo;m not sure how much mileage there is in EMC&rsquo;s product suite</li>
+<li>What affects remote workers the most? A <a href="http://www.moishelettvin.com/2015/10/16/remotes/">small survey</a> by Moishe Lettvin (Etsy) suggests it&rsquo;s not discipline, but communication and loneliness that can be the biggest challenges. George Stocker (Jewelbots), another remote worker, offers <a href="http://georgestocker.com/2015/11/17/eight-months-of-remote-work/">some suggestions</a> for trying to work around the biggest challenges of remote work</li>
 </ul>
 
 </div>
@@ -226,18 +221,12 @@
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="http://dba-team.com/post/2015/11/10/intro/" title="An Introduction">
+          <a href="http://dba-team.com/post/2015/11/10/week_in_review/" title="This week in the DBA Universe - 2015-11-10">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
     
 
-    
-      <li class="next">
-        <a href="http://dba-team.com/post/2015/11/25/week_in_review/" title="This week in the DBA Universe - 2015-11-25">
-            Next <span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
     
     </ul> </nav>
   

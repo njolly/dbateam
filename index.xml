@@ -9,8 +9,46 @@
     <managingEditor>nathan@dba-team.com (Nathan Jolly)</managingEditor>
     <webMaster>nathan@dba-team.com (Nathan Jolly)</webMaster>
     <copyright>(c) 2015 Nathan Jolly</copyright>
-    <lastBuildDate>Tue, 10 Nov 2015 20:25:30 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2015 07:26:32 +0800</lastBuildDate>
     <atom:link href="http://dba-team.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>This week in the DBA Universe - 2015-11-25</title>
+      <link>http://dba-team.com/post/2015/11/25/week_in_review/</link>
+      <pubDate>Wed, 25 Nov 2015 07:26:32 +0800</pubDate>
+      <author>nathan@dba-team.com (Nathan Jolly)</author>
+      <guid>http://dba-team.com/post/2015/11/25/week_in_review/</guid>
+      <description>
+
+&lt;p&gt;I expect things will quiet down on the database news front as North American companies take some time off for Thanksgiving and head towards the Christmas holidays.&lt;/p&gt;
+
+&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blogs.technet.com/b/dataplatforminsider/archive/2015/11/24/sql-server-2012-sp3-is-now-available.aspx&#34;&gt;SQL Server 2012 SP3&lt;/a&gt; is available! Kendra Little (BrentOzar.com) points out some &lt;a href=&#34;http://www.brentozar.com/archive/2015/11/sql-server-2012-sp3-adds-memory-grant-and-performance-features/&#34;&gt;great additions to DMVs&lt;/a&gt; which have been backported from SQL Server 2016&lt;/li&gt;
+&lt;li&gt;Brent Ozar had a neat list of things that are worth checking if your SQL Server &lt;a href=&#34;http://www.brentozar.com/archive/2015/11/why-is-sql-server-slow-sometimes-but-only-sometimes/&#34;&gt;suddenly becomes slow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The SQL Server DBCC SHOW_STATISTICS command is going to be even useful with this step-by-step guide on &lt;a href=&#34;https://www.mssqltips.com/sqlservertip/4092/how-to-interpret-sql-server-dbcc-showstatistics-output/&#34;&gt;how to interpret the results&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dimitri Kravtchuk (Oracle) has an interesting comparison of the &lt;a href=&#34;http://dimitrik.free.fr/blog/archives/2015/11/mysql-performance-what-is-odd-with-1m-qps-claimed-by-mariadb-101.html&#34;&gt;1M+ QPS metrics&lt;/a&gt; posted for both MySQL 5.7 and MariaDB 10.1. Possibly worth a read just for the comments discussion between Dimitri and Mark Callaghan&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.percona.com/blog/2015/11/12/logical-mysql-backup-tool-mydumper-0-9-1-now-available/&#34;&gt;MyDumper 0.9.1 is available&lt;/a&gt; - this is quite a major release and includes a number of features that may make it a viable alternative to mysqldump for logical backups&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re looking to poke around MySQL 5.7 but don&amp;rsquo;t have the inclination to spin up your own VM / container, you can look into &lt;a href=&#34;http://www.db4free.net/&#34;&gt;db4free.net&lt;/a&gt;, which now offers MySQL 5.7 databases free for testing&lt;/li&gt;
+&lt;li&gt;Vadim Tkachenko (Percona) offers more &lt;a href=&#34;https://www.percona.com/blog/2015/11/16/amazon-aurora-looking-deeper/&#34;&gt;third-party analysis&lt;/a&gt; of Amazon&amp;rsquo;s Aurora service. There are a few interesting risks which I hadn&amp;rsquo;t considered&lt;/li&gt;
+&lt;li&gt;Shlomi Noach (booking.com) has a great, if slightly biased (he maintains an alternative product) run-down of &lt;a href=&#34;http://code.openark.org/blog/mysql/thoughts-on-maxscale-automated-failover-and-orchestrator&#34;&gt;limitations in MariaDB&amp;rsquo;s MaxScale product&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ITNews reports on a December 1 &lt;a href=&#34;http://www.itnews.com/article/3004953/use-oracles-database-watch-out-for-this-dec-1-deadline.html&#34;&gt;cease-sale of Oracle SE and SE1&lt;/a&gt; (in favour of SE2) which may have serious licensing implications for some users. If you use Oracle you might want to take a look&lt;/li&gt;
+&lt;li&gt;Robert Harris (StorageMojo) offers &lt;a href=&#34;http://storagemojo.com/2015/11/16/mr-dells-eyes-fixed-on-the-rear-view-mirror/&#34;&gt;some analysis&lt;/a&gt; on Dell&amp;rsquo;s recent acquisition of EMC. This industry seems to be endlessly cyclical but even for on-premise compute the trend seems to be towards deploying on commodity baremetal rather than VMs on expensive storage, so I&amp;rsquo;m not sure how much mileage there is in EMC&amp;rsquo;s product suite&lt;/li&gt;
+&lt;li&gt;What affects remote workers the most? A &lt;a href=&#34;http://www.moishelettvin.com/2015/10/16/remotes/&#34;&gt;small survey&lt;/a&gt; by Moishe Lettvin (Etsy) suggests it&amp;rsquo;s not discipline, but communication and loneliness that can be the biggest challenges. George Stocker (Jewelbots), another remote worker, offers &lt;a href=&#34;http://georgestocker.com/2015/11/17/eight-months-of-remote-work/&#34;&gt;some suggestions&lt;/a&gt; for trying to work around the biggest challenges of remote work&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>This week in the DBA Universe - 2015-11-10</title>
