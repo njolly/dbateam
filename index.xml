@@ -9,8 +9,56 @@
     <managingEditor>nathan@dba-team.com (Nathan Jolly)</managingEditor>
     <webMaster>nathan@dba-team.com (Nathan Jolly)</webMaster>
     <copyright>(c) 2015 Nathan Jolly</copyright>
-    <lastBuildDate>Wed, 25 Nov 2015 07:26:32 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Dec 2015 21:51:10 +0800</lastBuildDate>
     <atom:link href="http://dba-team.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>This week in the DBA Universe - 2015-12-17</title>
+      <link>http://dba-team.com/post/2015/12/17/week_in_review/</link>
+      <pubDate>Thu, 17 Dec 2015 21:51:10 +0800</pubDate>
+      <author>nathan@dba-team.com (Nathan Jolly)</author>
+      <guid>http://dba-team.com/post/2015/12/17/week_in_review/</guid>
+      <description>
+
+&lt;p&gt;I was wrong about things getting more quiet leading up to Christmas. There&amp;rsquo;s been a lot of fascinating content in the three weeks since my last post.&lt;/p&gt;
+
+&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Greg Low (SQLDownUnder) offers some video of &lt;a href=&#34;http://sqlblog.com/blogs/greg_low/archive/2015/12/11/my-sessions-from-ignite-australia-on-the-gold-coast-now-online.aspx&#34;&gt;presentations he did for Microsoft Ignite&lt;/a&gt; - the &amp;laquo;things I wish developers knew about SQL Server&amp;raquo; presentation looks particularly interesting&lt;/li&gt;
+&lt;li&gt;SQLskills has &lt;a href=&#34;http://www.sqlskills.com/blogs/paul/sqlskills-holiday-gift-to-you-all-2014-insider-videos/&#34;&gt;released all of the video content&lt;/a&gt; from their newsletters over the past year&lt;/li&gt;
+&lt;li&gt;Erik Darling (BrentOzar.com) shows how SSMS in SQL Server 2012 (and soon 2014) can now tell you &lt;a href=&#34;http://www.brentozar.com/archive/2015/12/improved-diagnostics-for-query-execution-plans-that-involve-residual-predicate-pushdown/&#34;&gt;how many rows a query has actually read&lt;/a&gt;. This could be very useful for query tuning&lt;/li&gt;
+&lt;li&gt;Kevin Farlee (Microsoft) highlights some &lt;a href=&#34;http://blogs.technet.com/b/dataplatforminsider/archive/2015/12/15/enhanced-always-on-availability-groups-in-sql-server-2016.aspx&#34;&gt;major improvements for Always On in SQL Server 2016&lt;/a&gt; - basic HA in standard edition and no more requirement for a single Windows domain!&lt;/li&gt;
+&lt;li&gt;On that note, the SQL Server Team has released &lt;a href=&#34;http://blogs.technet.com/b/dataplatforminsider/archive/2015/11/30/introducing-sql-server-2016-community-technology-preview-3-1.aspx&#34;&gt;SQL Server 2016 CTP 3.1&lt;/a&gt;. Most of the improvements seem focused on Business Intelligence / Data Analysis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Percona have released &lt;a href=&#34;https://www.percona.com/blog/2015/12/04/percona-server-5-6-27-76-0-is-now-available/&#34;&gt;Percona Server 5.6.27&lt;/a&gt; and a bugfix for &lt;a href=&#34;https://www.percona.com/blog/2015/12/04/percona-server-5-5-46-37-6-is-now-available/&#34;&gt;5.5.46&lt;/a&gt;, and MariaDB have released &lt;a href=&#34;https://blog.mariadb.org/mariadb-5-5-47-and-updated-connectors-now-available/&#34;&gt;MariaDB 5.5.47&lt;/a&gt; as well. All of these are pretty much bug fix releases, including the upstream changes in MySQL 5.5.47&lt;/li&gt;
+&lt;li&gt;Percona have also released their first &lt;a href=&#34;https://www.percona.com/blog/2015/12/14/percona-server-5-7-10-1-first-release-candidate-is-now-available/&#34;&gt;RC build of Percona Server 5.7&lt;/a&gt;. Based on the known bugs it&amp;rsquo;s clearly in its early stages, but it&amp;rsquo;s great to see a build so soon after the MySQL 5.7 GA&lt;/li&gt;
+&lt;li&gt;Simon Mudd (booking.com) demonstrates that upgrading your MySQL 5.6 instances to 5.7 might result in some &lt;a href=&#34;http://blog.wl0.org/2015/12/a-couple-of-mysql-5-7-gotchas-to-be-aware-of/&#34;&gt;unexpected side effects with expiring passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vadim Tkachenko (Percona) reports some more &lt;a href=&#34;https://www.percona.com/blog/2015/12/03/amazon-aurora-sysbench-bencmarks/&#34;&gt;Amazon Aurora benchmarks&lt;/a&gt;, but it&amp;rsquo;s worth reading just for some of the comments from an Aurora engineer describing a bit about how it works&lt;/li&gt;
+&lt;li&gt;Meanwhile, Manoj Kukreja (Pythian) has been benchmarking &lt;a href=&#34;http://www.pythian.com/blog/benchmarking-google-cloud-sql-instances/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+pythian%2FzvUj+%28Official+Pythian+Blog%29&#34;&gt;Google&amp;rsquo;s offering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Oracle have improved their &lt;a href=&#34;http://mysqlrelease.com/2015/12/update-from-dockerland-fruitful-collaboration-and-some-security-news/&#34;&gt;MySQL Docker container release&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If &amp;laquo;injecting empty transactions&amp;raquo; to fix GTID problems sounds like an unpleasant exercise, Daniel Guzmán Burgos (Percona) shows how you can do it more elegantly with a utility named &lt;a href=&#34;https://www.percona.com/blog/2015/12/02/gtid-failover-with-mysqlslavetrx-fix-errant-transactions/&#34;&gt;mysqlslavetrx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dmitri Kravtchuk (Oracle) has some &lt;a href=&#34;http://dimitrik.free.fr/blog/archives/2015/12/mysql-performance-revisiting-innodb-vs-myisam-with-mysql-57.html&#34;&gt;InnoDB vs MyISAM benchmarks on 5.7&lt;/a&gt;. Thankfully, it&amp;rsquo;s nearly impossible to justify the use of MyISAM now&lt;/li&gt;
+&lt;li&gt;Daniël van Eeden (booking.com) has created a useful proof-of-concept MySQL plugin, using the new 5.7 Query Rewrite functionality, which &lt;a href=&#34;http://databaseblog.myname.nl/2015/12/using-parser-plugin-for-improved-search.html&#34;&gt;standardises unicode characters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Yoav Abrahami (Wix) discusses the viability of &lt;a href=&#34;http://engineering.wix.com/2015/12/10/scaling-to-100m-mysql-is-a-better-nosql/&#34;&gt;MySQL as a NoSQL engine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Brent Ozar (BrentOzar.com) ponders &lt;a href=&#34;http://www.brentozar.com/archive/2015/12/how-many-servers-can-one-person-manage/&#34;&gt;how many servers&lt;/a&gt; a single DBA can comfortably manage. The deeper down you go, the less broadly you can work&lt;/li&gt;
+&lt;li&gt;If you bookmark one thing from this blog post, bookmark this: &lt;a href=&#34;http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html&#34;&gt;Linux Performance Analysis in 60 seconds&lt;/a&gt;. HighScalability mentions some great &lt;a href=&#34;https://news.ycombinator.com/item?id=10654681&#34;&gt;follow-up discussion on HackerNews&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Twitter talks about &lt;a href=&#34;https://blog.twitter.com/2015/how-we-break-things-at-twitter-failure-testing&#34;&gt;how they perform reliability testing&lt;/a&gt; (&amp;laquo;we created a framework that can inject controlled failure conditions into the Twitter infrastructure&amp;raquo;). You can create the finest test environment, but there&amp;rsquo;s just nothing quite like testing in production&lt;/li&gt;
+&lt;li&gt;Grant Fritchey (Red Gate) is &lt;a href=&#34;http://www.scarydba.com/2015/12/07/learning-r-foundations/&#34;&gt;learning R&lt;/a&gt;. As a DBA with a peripheral interest in data science, this blog series will be something to keep an eye on&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s some retrospective analysis of a &lt;a href=&#34;http://gigi.nullneuron.net/gigilabs/lessons-learned-from-the-patreon-security-breach/&#34;&gt;breach of Patreon&amp;rsquo;s data&lt;/a&gt;. tl;dr, a dev database was compromised and the data wasn&amp;rsquo;t masked. Oops&lt;/li&gt;
+&lt;li&gt;HighScalability &lt;a href=&#34;http://highscalability.com/blog/2015/12/9/free-red-book-readings-in-database-systems-5th-edition.html&#34;&gt;points to an updated Red Book&lt;/a&gt; called &amp;laquo;Readings in Database Systems&amp;raquo;. I am looking forward to reading these&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>This week in the DBA Universe - 2015-11-25</title>

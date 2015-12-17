@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>This week in the DBA Universe - 2015-12-17  &middot; dba-team - musings on database administration</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Linux performance analysis tips, SQL Server training material and lots of minor releases in the MySQL ecosystem" />
+
+<meta name="keywords" content="week_in_review, dba, ">
+
+
+<meta property="og:title" content="This week in the DBA Universe - 2015-12-17  &middot; dba-team - musings on database administration ">
+<meta property="og:site_name" content="dba-team - musings on database administration"/>
+<meta property="og:url" content="http://dba-team.com/post/2015/12/17/week_in_review/" />
+<meta property="og:locale" content="en-AU">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Linux performance analysis tips, SQL Server training material and lots of minor releases in the MySQL ecosystem"/>
+<meta property="og:article:published_time" content="2015-12-17T21:51:10&#43;08:00" />
+<meta property="og:article:modified_time" content="2015-12-17T21:51:10&#43;08:00" />
+
+  
+    
+<meta property="og:article:tag" content="week_in_review">
+    
+<meta property="og:article:tag" content="dba">
+    
+  
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "This week in the DBA Universe - 2015-12-17",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2015-12-17",
+    "description": "Linux performance analysis tips, SQL Server training material and lots of minor releases in the MySQL ecosystem",
+    "wordCount":  544 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://dba-team.com/post/2015/12/17/week_in_review/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://dba-team.com/touch-icon-144-precomposed.png">
+<link href="http://dba-team.com/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.14" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="http://dba-team.com/css/theme/default.css">
+
+
+<link rel="stylesheet" href="http://dba-team.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://dba-team.com/css/style.css">
+
+
+  <link rel="stylesheet" href="http://dba-team.com/css/highlight/default.css">
+
+
+</head>
+<body>
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://dba-team.com/">dba-team - musings on database administration</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li>
+
+            <a href="http://dba-team.com/about"
+            >
+
+            
+                <i class="fa fa-info-circle"></i>
+            
+            
+            About
+            </a>
+          </li>
+          
+          <li>
+
+            <a href="http://dba-team.com/post"
+             title="Show list of posts">
+
+            
+            
+            Posts
+            </a>
+          </li>
+          
+          <li>
+
+            <a href="http://dba-team.com/tags"
+             title="Show list of tags">
+
+            
+            
+            Tags
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+
+</header>
+
+
+<div class="container">
+<div class="row">
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>This week in the DBA Universe - 2015-12-17
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2015-12-17">17 Dec, 2015</time>
+</small>
+
+
+  <small>
+    &middot; by Nathan J
+  
+  &middot; Read in about 3 min
+  &middot; (544 Words)
+</small>
+
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="http://dba-team.com/tags/week_in_review" class="label label-primary">week_in_review</a>
+  
+  <a href="http://dba-team.com/tags/dba" class="label label-primary">dba</a>
+  
+
+
+</div>
+<br>
+</div>
+
+  </div>
+</div>
+
+  <div class="container content">
+  
+
+<p>I was wrong about things getting more quiet leading up to Christmas. There&rsquo;s been a lot of fascinating content in the three weeks since my last post.</p>
+
+<h2 id="sql-server">SQL Server</h2>
+
+<ul>
+<li>Greg Low (SQLDownUnder) offers some video of <a href="http://sqlblog.com/blogs/greg_low/archive/2015/12/11/my-sessions-from-ignite-australia-on-the-gold-coast-now-online.aspx">presentations he did for Microsoft Ignite</a> - the &laquo;things I wish developers knew about SQL Server&raquo; presentation looks particularly interesting</li>
+<li>SQLskills has <a href="http://www.sqlskills.com/blogs/paul/sqlskills-holiday-gift-to-you-all-2014-insider-videos/">released all of the video content</a> from their newsletters over the past year</li>
+<li>Erik Darling (BrentOzar.com) shows how SSMS in SQL Server 2012 (and soon 2014) can now tell you <a href="http://www.brentozar.com/archive/2015/12/improved-diagnostics-for-query-execution-plans-that-involve-residual-predicate-pushdown/">how many rows a query has actually read</a>. This could be very useful for query tuning</li>
+<li>Kevin Farlee (Microsoft) highlights some <a href="http://blogs.technet.com/b/dataplatforminsider/archive/2015/12/15/enhanced-always-on-availability-groups-in-sql-server-2016.aspx">major improvements for Always On in SQL Server 2016</a> - basic HA in standard edition and no more requirement for a single Windows domain!</li>
+<li>On that note, the SQL Server Team has released <a href="http://blogs.technet.com/b/dataplatforminsider/archive/2015/11/30/introducing-sql-server-2016-community-technology-preview-3-1.aspx">SQL Server 2016 CTP 3.1</a>. Most of the improvements seem focused on Business Intelligence / Data Analysis</li>
+</ul>
+
+<h2 id="mysql">MySQL</h2>
+
+<ul>
+<li>Percona have released <a href="https://www.percona.com/blog/2015/12/04/percona-server-5-6-27-76-0-is-now-available/">Percona Server 5.6.27</a> and a bugfix for <a href="https://www.percona.com/blog/2015/12/04/percona-server-5-5-46-37-6-is-now-available/">5.5.46</a>, and MariaDB have released <a href="https://blog.mariadb.org/mariadb-5-5-47-and-updated-connectors-now-available/">MariaDB 5.5.47</a> as well. All of these are pretty much bug fix releases, including the upstream changes in MySQL 5.5.47</li>
+<li>Percona have also released their first <a href="https://www.percona.com/blog/2015/12/14/percona-server-5-7-10-1-first-release-candidate-is-now-available/">RC build of Percona Server 5.7</a>. Based on the known bugs it&rsquo;s clearly in its early stages, but it&rsquo;s great to see a build so soon after the MySQL 5.7 GA</li>
+<li>Simon Mudd (booking.com) demonstrates that upgrading your MySQL 5.6 instances to 5.7 might result in some <a href="http://blog.wl0.org/2015/12/a-couple-of-mysql-5-7-gotchas-to-be-aware-of/">unexpected side effects with expiring passwords</a></li>
+<li>Vadim Tkachenko (Percona) reports some more <a href="https://www.percona.com/blog/2015/12/03/amazon-aurora-sysbench-bencmarks/">Amazon Aurora benchmarks</a>, but it&rsquo;s worth reading just for some of the comments from an Aurora engineer describing a bit about how it works</li>
+<li>Meanwhile, Manoj Kukreja (Pythian) has been benchmarking <a href="http://www.pythian.com/blog/benchmarking-google-cloud-sql-instances/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+pythian%2FzvUj+%28Official+Pythian+Blog%29">Google&rsquo;s offering</a></li>
+<li>Oracle have improved their <a href="http://mysqlrelease.com/2015/12/update-from-dockerland-fruitful-collaboration-and-some-security-news/">MySQL Docker container release</a></li>
+<li>If &laquo;injecting empty transactions&raquo; to fix GTID problems sounds like an unpleasant exercise, Daniel Guzmán Burgos (Percona) shows how you can do it more elegantly with a utility named <a href="https://www.percona.com/blog/2015/12/02/gtid-failover-with-mysqlslavetrx-fix-errant-transactions/">mysqlslavetrx</a></li>
+<li>Dmitri Kravtchuk (Oracle) has some <a href="http://dimitrik.free.fr/blog/archives/2015/12/mysql-performance-revisiting-innodb-vs-myisam-with-mysql-57.html">InnoDB vs MyISAM benchmarks on 5.7</a>. Thankfully, it&rsquo;s nearly impossible to justify the use of MyISAM now</li>
+<li>Daniël van Eeden (booking.com) has created a useful proof-of-concept MySQL plugin, using the new 5.7 Query Rewrite functionality, which <a href="http://databaseblog.myname.nl/2015/12/using-parser-plugin-for-improved-search.html">standardises unicode characters</a></li>
+<li>Yoav Abrahami (Wix) discusses the viability of <a href="http://engineering.wix.com/2015/12/10/scaling-to-100m-mysql-is-a-better-nosql/">MySQL as a NoSQL engine</a></li>
+</ul>
+
+<h2 id="general">General</h2>
+
+<ul>
+<li>Brent Ozar (BrentOzar.com) ponders <a href="http://www.brentozar.com/archive/2015/12/how-many-servers-can-one-person-manage/">how many servers</a> a single DBA can comfortably manage. The deeper down you go, the less broadly you can work</li>
+<li>If you bookmark one thing from this blog post, bookmark this: <a href="http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html">Linux Performance Analysis in 60 seconds</a>. HighScalability mentions some great <a href="https://news.ycombinator.com/item?id=10654681">follow-up discussion on HackerNews</a></li>
+<li>Twitter talks about <a href="https://blog.twitter.com/2015/how-we-break-things-at-twitter-failure-testing">how they perform reliability testing</a> (&laquo;we created a framework that can inject controlled failure conditions into the Twitter infrastructure&raquo;). You can create the finest test environment, but there&rsquo;s just nothing quite like testing in production</li>
+<li>Grant Fritchey (Red Gate) is <a href="http://www.scarydba.com/2015/12/07/learning-r-foundations/">learning R</a>. As a DBA with a peripheral interest in data science, this blog series will be something to keep an eye on</li>
+<li>There&rsquo;s some retrospective analysis of a <a href="http://gigi.nullneuron.net/gigilabs/lessons-learned-from-the-patreon-security-breach/">breach of Patreon&rsquo;s data</a>. tl;dr, a dev database was compromised and the data wasn&rsquo;t masked. Oops</li>
+<li>HighScalability <a href="http://highscalability.com/blog/2015/12/9/free-red-book-readings-in-database-systems-5th-edition.html">points to an updated Red Book</a> called &laquo;Readings in Database Systems&raquo;. I am looking forward to reading these</li>
+</ul>
+
+</div>
+
+
+  <footer>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="http://dba-team.com/post/2015/11/25/week_in_review/" title="This week in the DBA Universe - 2015-11-25">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+
+</div>
+
+</footer>
+
+
+</div>
+</div>
+      <footer class="footer">
+    <div class="container hidden-print">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="#">back to top</a>
+</div>
+<div class="pull-right">
+  
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <small>
+              
+    
+
+    
+<div class="container copyright">
+  
+  &copy; 2015 Nathan Jolly
+
+
+</div>
+
+
+
+          </small>
+        </div>
+     </div>
+    </div>
+</footer>
+
+    <script src="http://dba-team.com/js/jquery.min-2.1.4.js"></script>
+<script src="http://dba-team.com/js/bootstrap.min-3.3.5.js"></script>
+
+
+
+
+<script src="http://dba-team.com/js/highlight.pack.js"></script>
+<script src="http://dba-team.com/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </body>
+</html>
+
