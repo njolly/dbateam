@@ -49,7 +49,7 @@
     },
     "datePublished": "2015-11-10",
     "description": "MySQL 5.7 followup, Percona software releases, and some questions raised about Aurora",
-    "wordCount":  285 
+    "wordCount":  293 
   }
 </script>
 
@@ -60,7 +60,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://dba-team.com/touch-icon-144-precomposed.png">
 <link href="http://dba-team.com/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.14" />
+<meta name="generator" content="Hugo 0.15" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -160,7 +160,7 @@
     &middot; by Nathan J
   
   &middot; Read in about 2 min
-  &middot; (285 Words)
+  &middot; (293 Words)
 </small>
 
 
@@ -185,17 +185,17 @@
 
 <p>There&rsquo;s a lot of activity in the MySQL world over the past couple of weeks in the wake of MySQL 5.7&rsquo;s GA release.</p>
 
-<h2 id="sql-server">SQL Server</h2>
+<h2 id="sql-server:27376ff6153512b82331e437a0c029df">SQL Server</h2>
 
 <ul>
 <li>Kendra Little (BrentOzar.com) points out that the StackExchange dataset makes an excellent tool for testing (or developing) <a href="http://www.brentozar.com/archive/2015/11/interviewing-how-to-test-tsql-writing-skills/">TSQL writing skills</a></li>
 <li>Microsoft have released <a href="http://blogs.technet.com/b/dataplatforminsider/archive/2015/10/28/sql-server-2016-community-technology-preview-3-0-is-available.aspx">SQL Server 2016 CTP3</a>. Lots of strong improvements including analytics, the cloud, encryption, JSON, temporal tables and in-memory, though one would imagine that Standard edition servers aren&rsquo;t going to see most of this</li>
 </ul>
 
-<h2 id="mysql">MySQL</h2>
+<h2 id="mysql:27376ff6153512b82331e437a0c029df">MySQL</h2>
 
 <ul>
-<li>Vitor Oliveira (Oracle) offers some <a href="http://mysqlhighavailability.com/multi-threaded-replication-performance-in-mysql-5-7/">benchmarks on MySQL 5.7&rsquo;s Multi-threaded slave feature</a>, and the numbers are looking very promising</li>
+<li>Vitor Oliveira (Oracle) offers some [benchmarks on MySQL 5.7&rsquo;s Multi-threaded slave feature], and the numbers are looking very promising</li>
 <li>Peter Laursen (Webyog) points out that using MySQL 5.7&rsquo;s <a href="http://blog.webyog.com/2015/11/09/beware-virtual-columns-may-render-backups-unusable/">computed columns could cause problems for non-native backup/restore tools</a></li>
 <li>SeveralNines are continuing their excellent &laquo;<a href="http://www.severalnines.com/blog-tags/dba">Become a MySQL DBA</a>&raquo; blog series with tips on analysing the <a href="http://www.severalnines.com/blog/become-mysql-dba-blog-series-understanding-mysql-error-log">MySQL Error Log</a> and <a href="http://www.severalnines.com/blog/become-mysql-dba-blog-series-galera-cluster-diagnostic-logs">Galera diagnostic logs</a></li>
 <li>There&rsquo;s been a bit of coverage of Aurora:
@@ -208,13 +208,15 @@
 <li>Mark Leith offers slides from a talk about the <a href="http://www.markleith.co.uk/2015/10/29/slides-for-mysql-sys-schema-deep-dive-oracle-openworld-2015/">MySQL sys schema</a>, which is now bundled into MySQL 5.7 and available separately for other version</li>
 </ul>
 
-<h2 id="general">General</h2>
+<h2 id="general:27376ff6153512b82331e437a0c029df">General</h2>
 
 <ul>
 <li>Chris Ueland of MaxCDN offers a nice summary of <a href="http://www.scalescale.com/the-stack-behind-netflix-scaling/">Netflix&rsquo;s technology stack</a></li>
 <li>HighScalability points out the Hasso-Plattner-Institut&rsquo;s <a href="http://hpi.de/naumann/projects/rdbms-genealogy.html">Genealogy of Relational Database Management Systems</a>. This is really cool</li>
 <li>Researchers Daniel Abadi and Jose Faleiro propose a theorum about tradeoffs with distributed NoSQL systems that they call <a href="http://dbmsmusings.blogspot.com.au/2015/10/why-mongodb-cassandra-hbase-dynamodb_28.html">the FIT theorum</a>: Fairness, Isolation or Throughput (pick any two)</li>
 </ul>
+
+<p>[benchmarks on MySQL 5.7&rsquo;s Multi-threaded slave feature]: <a href="http://mysqlhighavailability.com/multi-threaded-replication-performance-in-mysql-5-7/">http://mysqlhighavailability.com/multi-threaded-replication-performance-in-mysql-5-7/</a></p>
 
 </div>
 

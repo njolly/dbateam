@@ -9,8 +9,48 @@
     <managingEditor>nathan@dba-team.com (Nathan Jolly)</managingEditor>
     <webMaster>nathan@dba-team.com (Nathan Jolly)</webMaster>
     <copyright>(c) 2015 Nathan Jolly</copyright>
-    <lastBuildDate>Tue, 29 Mar 2016 08:51:33 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 Apr 2016 21:23:26 +0800</lastBuildDate>
     <atom:link href="http://dba-team.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>This week in the DBA Universe - 2016-04-22</title>
+      <link>http://dba-team.com/post/2016/4/22/week_in_review/</link>
+      <pubDate>Fri, 22 Apr 2016 21:23:26 +0800</pubDate>
+      <author>nathan@dba-team.com (Nathan Jolly)</author>
+      <guid>http://dba-team.com/post/2016/4/22/week_in_review/</guid>
+      <description>
+
+&lt;p&gt;So, it&amp;rsquo;s been another month. I&amp;rsquo;ll have to find a title better than &amp;laquo;this week in&amp;hellip;&amp;raquo;.&lt;/p&gt;
+
+&lt;p&gt;Anyone interested in seeing updates for Oracle, DB2, PostgreSQL or Sybase ASE? I have to work with all of them now. Let me know!&lt;/p&gt;
+
+&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I missed this by a day or two with my last blog, but I&amp;rsquo;m really excited to see that &lt;a href=&#34;https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/31/microsoft-sql-server-developer-edition-is-now-free/&#34;&gt;SQL Server Developer Edition is now free&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Erik Darling (BrentOzar.com) offers advice on how to use &lt;a href=&#34;https://ola.hallengren.com/&#34;&gt;Ola Hallengren&amp;rsquo;s great DBA scripts&lt;/a&gt; to &lt;a href=&#34;http://www.brentozar.com/archive/2016/04/updating-statistics-ola-hallengrens-scripts/&#34;&gt;update statistics without doing index maintenance&lt;/a&gt;. With modern storage systems you might find that index maintenance is costing you a lot more than it&amp;rsquo;s helping&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.technet.microsoft.com/dataplatforminsider/2016/04/15/sql-server-2016-release-candidate-3-now-available/&#34;&gt;SQL Server 2016 Release Candidate 3&lt;/a&gt; is now available, and is being flagged as the &amp;laquo;final&amp;raquo; release candidate before official release&lt;/li&gt;
+&lt;li&gt;Microsoft has &lt;a href=&#34;https://www.brentozar.com/archive/2016/04/breaking-news-literally-sql-clr-support-removed-azure-sql-db/&#34;&gt;removed SQL CLR support from Azure SQL Database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mariadb.org/mariadb-10-2-0-alpha-now-available/&#34;&gt;MariaDB 10.2 Alpha&lt;/a&gt; is now available. It&amp;rsquo;s create to see &lt;a href=&#34;http://ocelot.ca/blog/blog/2016/04/18/mariadb-10-2-window-functions/&#34;&gt;window functions&lt;/a&gt; even if they&amp;rsquo;re still quite buggy, though I&amp;rsquo;d rather have &lt;a href=&#34;https://jira.mariadb.org/browse/MDEV-8308&#34;&gt;CTEs&lt;/a&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mysqlserverteam.com/mysql-5-7-12-part-1-more-than-a-maintenance-release/&#34;&gt;MySQL 5.7.12&lt;/a&gt; is also now available, and introduces significant new features. It can &lt;a href=&#34;https://www.percona.com/blog/2016/04/15/mysql-document-store-developments/&#34;&gt;act as a document store&lt;/a&gt;, offers &lt;a href=&#34;http://mysqlserverteam.com/mysql-5-7-12-part-2-improving-the-mysql-protocol/&#34;&gt;a new API&lt;/a&gt;, an &lt;a href=&#34;http://mysqlserverteam.com/mysql-5-7-12-part-4-a-new-mysql-command-line-shell/&#34;&gt;entirely new interactive shell&lt;/a&gt; with JS and Python support, and the introduction of a &lt;a href=&#34;http://dev.mysql.com/downloads/connector/nodejs/1.0.html&#34;&gt;node.js connector&lt;/a&gt; alongside the updated &lt;a href=&#34;http://insidemysql.com/announcing-mysql-connectorj-6-0/&#34;&gt;Java&lt;/a&gt; and &lt;a href=&#34;http://insidemysql.com/announcing-mysql-connectorj-6-0/&#34;&gt;.NET&lt;/a&gt; connectors&lt;/li&gt;
+&lt;li&gt;Percona have bundled together their own monitoring scripts with &lt;a href=&#34;https://prometheus.io/&#34;&gt;Prometheus&lt;/a&gt; and &lt;a href=&#34;http://grafana.org/&#34;&gt;Grafana&lt;/a&gt; to produce a beta of a new &lt;a href=&#34;https://www.percona.com/blog/2016/04/18/percona-monitoring-and-management/&#34;&gt;Percona Monitoring and Management&lt;/a&gt; tool&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.percona.com/blog/2016/04/01/percona-xtrabackup-2-4-2-now-available/&#34;&gt;Percona XtraBackup 2.4.2&lt;/a&gt; is generally available&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vadim Tkachenko and Peter Zaitsev (Percona) have done an exhaustive &lt;a href=&#34;https://www.percona.com/blog/2016/03/09/evaluating-database-compression-methods/&#34;&gt;analysis on different compression algorithms&lt;/a&gt; (&lt;a href=&#34;https://www.percona.com/blog/2016/04/13/evaluating-database-compression-methods-update/&#34;&gt;+Update&lt;/a&gt; - though the results don&amp;rsquo;t appear to have immediate practical implications&lt;/li&gt;
+&lt;li&gt;Diginomica offers a write-up on the promise of &lt;a href=&#34;http://diginomica.com/2016/04/11/do-gpu-optimized-databases-threaten-the-hegemony-of-oracle-splunk-and-hadoop/&#34;&gt;GPU-accelerated databases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Microsoft&amp;rsquo;s Insider program is already offering support for &lt;a href=&#34;http://arstechnica.com/information-technology/2016/04/first-windows-10-preview-with-bash-support-is-out-now/&#34;&gt;native Linux bash on Windows&lt;/a&gt;. Maybe I &lt;em&gt;can&lt;/em&gt; have my cake and eat it too!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>This week in the DBA Universe - 2016-03-29</title>
@@ -22,7 +62,7 @@
 
 &lt;p&gt;It&amp;rsquo;s tough to get back into the swing of things. New year, new job, new reasons to procrastinate. On account of being three months since my last update, I&amp;rsquo;ll stick to the highlights.&lt;/p&gt;
 
-&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+&lt;h2 id=&#34;sql-server:27376ff6153512b82331e437a0c029df&#34;&gt;SQL Server&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;At an event it hosted earlier this month, Microsoft made the announcement that it is making &lt;a href=&#34;http://blogs.microsoft.com/blog/2016/03/07/announcing-sql-server-on-linux/&#34;&gt;SQL Server available on Linux in mid 2017&lt;/a&gt;, and that it&amp;rsquo;s already in &amp;laquo;private preview&amp;raquo; to interested customers. This could really help Microsoft attract existing Oracle customers, and it will definitely please a few DBAs whose environment is primarily running on Linux/Unix, but the real winners here are probably Microsoft. I&amp;rsquo;d wager they&amp;rsquo;d save a lot of memory getting Azure&amp;rsquo;s SQL Database engines running on Linux instead of Windows&amp;hellip;&lt;/li&gt;
@@ -31,14 +71,14 @@
 &lt;li&gt;BrentOzar.com has released &lt;a href=&#34;https://www.brentozar.com/archive/2016/03/announcing-sp_blitzindex-v3-0-sp_blitz-v48/&#34;&gt;new versions of their Blitz scripts&lt;/a&gt;: sp_Blitz, sp_BlitzIndex and sp_BlitzCache&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+&lt;h2 id=&#34;mysql:27376ff6153512b82331e437a0c029df&#34;&gt;MySQL&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Vadim Tkachenko (Percona) has been doing some analysis of the CPU, Network and IO overheads of running MySQL in a docker container vs. baremetal. Results are promising: there&amp;rsquo;s &lt;a href=&#34;https://www.percona.com/blog/2016/02/11/measuring-docker-io-overhead/&#34;&gt;minimal IO overhead&lt;/a&gt; and the CPU overhead also appears to be low, but the default port-forwarding docker configuration looks to pose &lt;a href=&#34;https://www.percona.com/blog/2016/02/05/measuring-docker-cpu-network-overhead/&#34;&gt;some throughput problems&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;To accompany the release of Percona Server 5.7 (currently at &lt;a href=&#34;https://www.percona.com/blog/2016/03/15/percona-server-5-7-11-4-is-now-available/&#34;&gt;5.7.11&lt;/a&gt;), Percona have released new versions of &lt;a href=&#34;https://www.percona.com/blog/2016/02/23/33632/&#34;&gt;XtraBackup (2.4.1)&lt;/a&gt; and &lt;a href=&#34;https://www.percona.com/blog/2016/03/07/percona-toolkit-2-2-17-is-now-available/&#34;&gt;Percona Toolkit (2.2.17)&lt;/a&gt; which finally support MySQL 5.7. Unless you have an extremely busy single-threaded workload (where 5.5 would probably suit you best), there probably aren&amp;rsquo;t any good reasons to avoid upgrading&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+&lt;h2 id=&#34;general:27376ff6153512b82331e437a0c029df&#34;&gt;General&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Visual Studio Community Edition now offers &lt;a href=&#34;https://blogs.technet.microsoft.com/machinelearning/2016/03/09/announcing-r-tools-for-visual-studio-2/&#34;&gt;support for the R language&lt;/a&gt;. R and other analytics/learning tools seem to be a significant part of Microsoft&amp;rsquo;s plans for SQL Server&lt;/li&gt;
@@ -105,7 +145,7 @@
 
 &lt;p&gt;I expect things will quiet down on the database news front as North American companies take some time off for Thanksgiving and head towards the Christmas holidays.&lt;/p&gt;
 
-&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+&lt;h2 id=&#34;sql-server:27376ff6153512b82331e437a0c029df&#34;&gt;SQL Server&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://blogs.technet.com/b/dataplatforminsider/archive/2015/11/24/sql-server-2012-sp3-is-now-available.aspx&#34;&gt;SQL Server 2012 SP3&lt;/a&gt; is available! Kendra Little (BrentOzar.com) points out some &lt;a href=&#34;http://www.brentozar.com/archive/2015/11/sql-server-2012-sp3-adds-memory-grant-and-performance-features/&#34;&gt;great additions to DMVs&lt;/a&gt; which have been backported from SQL Server 2016&lt;/li&gt;
@@ -113,7 +153,7 @@
 &lt;li&gt;The SQL Server DBCC SHOW_STATISTICS command is going to be even useful with this step-by-step guide on &lt;a href=&#34;https://www.mssqltips.com/sqlservertip/4092/how-to-interpret-sql-server-dbcc-showstatistics-output/&#34;&gt;how to interpret the results&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+&lt;h2 id=&#34;mysql:27376ff6153512b82331e437a0c029df&#34;&gt;MySQL&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Dimitri Kravtchuk (Oracle) has an interesting comparison of the &lt;a href=&#34;http://dimitrik.free.fr/blog/archives/2015/11/mysql-performance-what-is-odd-with-1m-qps-claimed-by-mariadb-101.html&#34;&gt;1M+ QPS metrics&lt;/a&gt; posted for both MySQL 5.7 and MariaDB 10.1. Possibly worth a read just for the comments discussion between Dimitri and Mark Callaghan&lt;/li&gt;
@@ -123,7 +163,7 @@
 &lt;li&gt;Shlomi Noach (booking.com) has a great, if slightly biased (he maintains an alternative product) run-down of &lt;a href=&#34;http://code.openark.org/blog/mysql/thoughts-on-maxscale-automated-failover-and-orchestrator&#34;&gt;limitations in MariaDB&amp;rsquo;s MaxScale product&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+&lt;h2 id=&#34;general:27376ff6153512b82331e437a0c029df&#34;&gt;General&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ITNews reports on a December 1 &lt;a href=&#34;http://www.itnews.com/article/3004953/use-oracles-database-watch-out-for-this-dec-1-deadline.html&#34;&gt;cease-sale of Oracle SE and SE1&lt;/a&gt; (in favour of SE2) which may have serious licensing implications for some users. If you use Oracle you might want to take a look&lt;/li&gt;
@@ -143,17 +183,17 @@
 
 &lt;p&gt;There&amp;rsquo;s a lot of activity in the MySQL world over the past couple of weeks in the wake of MySQL 5.7&amp;rsquo;s GA release.&lt;/p&gt;
 
-&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+&lt;h2 id=&#34;sql-server:27376ff6153512b82331e437a0c029df&#34;&gt;SQL Server&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Kendra Little (BrentOzar.com) points out that the StackExchange dataset makes an excellent tool for testing (or developing) &lt;a href=&#34;http://www.brentozar.com/archive/2015/11/interviewing-how-to-test-tsql-writing-skills/&#34;&gt;TSQL writing skills&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Microsoft have released &lt;a href=&#34;http://blogs.technet.com/b/dataplatforminsider/archive/2015/10/28/sql-server-2016-community-technology-preview-3-0-is-available.aspx&#34;&gt;SQL Server 2016 CTP3&lt;/a&gt;. Lots of strong improvements including analytics, the cloud, encryption, JSON, temporal tables and in-memory, though one would imagine that Standard edition servers aren&amp;rsquo;t going to see most of this&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+&lt;h2 id=&#34;mysql:27376ff6153512b82331e437a0c029df&#34;&gt;MySQL&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Vitor Oliveira (Oracle) offers some &lt;a href=&#34;http://mysqlhighavailability.com/multi-threaded-replication-performance-in-mysql-5-7/&#34;&gt;benchmarks on MySQL 5.7&amp;rsquo;s Multi-threaded slave feature&lt;/a&gt;, and the numbers are looking very promising&lt;/li&gt;
+&lt;li&gt;Vitor Oliveira (Oracle) offers some [benchmarks on MySQL 5.7&amp;rsquo;s Multi-threaded slave feature], and the numbers are looking very promising&lt;/li&gt;
 &lt;li&gt;Peter Laursen (Webyog) points out that using MySQL 5.7&amp;rsquo;s &lt;a href=&#34;http://blog.webyog.com/2015/11/09/beware-virtual-columns-may-render-backups-unusable/&#34;&gt;computed columns could cause problems for non-native backup/restore tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;SeveralNines are continuing their excellent &amp;laquo;&lt;a href=&#34;http://www.severalnines.com/blog-tags/dba&#34;&gt;Become a MySQL DBA&lt;/a&gt;&amp;raquo; blog series with tips on analysing the &lt;a href=&#34;http://www.severalnines.com/blog/become-mysql-dba-blog-series-understanding-mysql-error-log&#34;&gt;MySQL Error Log&lt;/a&gt; and &lt;a href=&#34;http://www.severalnines.com/blog/become-mysql-dba-blog-series-galera-cluster-diagnostic-logs&#34;&gt;Galera diagnostic logs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;There&amp;rsquo;s been a bit of coverage of Aurora:
@@ -166,13 +206,15 @@
 &lt;li&gt;Mark Leith offers slides from a talk about the &lt;a href=&#34;http://www.markleith.co.uk/2015/10/29/slides-for-mysql-sys-schema-deep-dive-oracle-openworld-2015/&#34;&gt;MySQL sys schema&lt;/a&gt;, which is now bundled into MySQL 5.7 and available separately for other version&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+&lt;h2 id=&#34;general:27376ff6153512b82331e437a0c029df&#34;&gt;General&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Chris Ueland of MaxCDN offers a nice summary of &lt;a href=&#34;http://www.scalescale.com/the-stack-behind-netflix-scaling/&#34;&gt;Netflix&amp;rsquo;s technology stack&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;HighScalability points out the Hasso-Plattner-Institut&amp;rsquo;s &lt;a href=&#34;http://hpi.de/naumann/projects/rdbms-genealogy.html&#34;&gt;Genealogy of Relational Database Management Systems&lt;/a&gt;. This is really cool&lt;/li&gt;
 &lt;li&gt;Researchers Daniel Abadi and Jose Faleiro propose a theorum about tradeoffs with distributed NoSQL systems that they call &lt;a href=&#34;http://dbmsmusings.blogspot.com.au/2015/10/why-mongodb-cassandra-hbase-dynamodb_28.html&#34;&gt;the FIT theorum&lt;/a&gt;: Fairness, Isolation or Throughput (pick any two)&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;[benchmarks on MySQL 5.7&amp;rsquo;s Multi-threaded slave feature]: &lt;a href=&#34;http://mysqlhighavailability.com/multi-threaded-replication-performance-in-mysql-5-7/&#34;&gt;http://mysqlhighavailability.com/multi-threaded-replication-performance-in-mysql-5-7/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -184,7 +226,7 @@
       <guid>http://dba-team.com/about/</guid>
       <description>
 
-&lt;h2 id=&#34;about-nathan&#34;&gt;About Nathan&lt;/h2&gt;
+&lt;h2 id=&#34;about-nathan:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;About Nathan&lt;/h2&gt;
 
 &lt;p&gt;I&amp;rsquo;m a full-time database administrator, and have had the privilege of working with a broad number of database technologies during my career. I currently spend most of my time working with MySQL and Microsoft SQL Server.&lt;/p&gt;
 
@@ -200,7 +242,7 @@
       <pubDate>Tue, 10 Nov 2015 17:37:15 +0800</pubDate>
       <author>nathan@dba-team.com (Nathan Jolly)</author>
       <guid>http://dba-team.com/post/2015/11/10/intro/</guid>
-      <description>&lt;p&gt;The first posts you&amp;rsquo;ll see on this site are titled &amp;laquo;&lt;a href=&#34;http://dba-team.com/tags/week_in_review/&#34;&gt;This week in the DBA universe&lt;/a&gt;&amp;raquo;.&lt;/p&gt;
+      <description>&lt;p&gt;The first posts you&amp;rsquo;ll see on this site are titled &amp;laquo;[This week in the DBA universe]&amp;laquo;.&lt;/p&gt;
 
 &lt;p&gt;Which is incorrect on a number of levels, not least:&lt;/p&gt;
 
@@ -212,6 +254,8 @@
 &lt;p&gt;However, it&amp;rsquo;s the best title I&amp;rsquo;ve got for now.&lt;/p&gt;
 
 &lt;p&gt;Pythian&amp;rsquo;s &lt;a href=&#34;http://www.pythian.com/blog/about-log-buffer/&#34;&gt;log buffer&lt;/a&gt; has a great set of curated content focused on database development and design, but I hope this is helpful for people who&amp;rsquo;d like to keep up to date with what&amp;rsquo;s new with database software and toolsets themselves.&lt;/p&gt;
+
+&lt;p&gt;[This week in the DBA universe]: /tags/week_in_review/&lt;/p&gt;
 </description>
     </item>
     
