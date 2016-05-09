@@ -9,8 +9,40 @@
     <managingEditor>nathan@dba-team.com (Nathan Jolly)</managingEditor>
     <webMaster>nathan@dba-team.com (Nathan Jolly)</webMaster>
     <copyright>(c) 2015 Nathan Jolly</copyright>
-    <lastBuildDate>Fri, 22 Apr 2016 21:23:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 May 2016 22:20:01 +0800</lastBuildDate>
     <atom:link href="http://dba-team.com/tags/week_in_review/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>This week in the DBA Universe - 2016-05-09</title>
+      <link>http://dba-team.com/post/2016/5/9/week_in_review/</link>
+      <pubDate>Mon, 09 May 2016 22:20:01 +0800</pubDate>
+      <author>nathan@dba-team.com (Nathan Jolly)</author>
+      <guid>http://dba-team.com/post/2016/5/9/week_in_review/</guid>
+      <description>
+
+&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We have a &lt;a href=&#34;https://blogs.technet.microsoft.com/dataplatforminsider/2016/05/02/get-ready-sql-server-2016-coming-on-june-1st/&#34;&gt;release date for SQL Server 2016&lt;/a&gt; - June 1. There&amp;rsquo;s a lot of new BI/Analytics related features, but Brent Ozar has a good &lt;a href=&#34;https://www.brentozar.com/archive/2016/05/sql-server-2016-release-date-june-1-2016/&#34;&gt;summary of the highlights&lt;/a&gt; that most operational DBAs would care about&lt;/li&gt;
+&lt;li&gt;Ayo Olubeko (Microsoft) blogs about &lt;a href=&#34;https://blogs.technet.microsoft.com/dataplatforminsider/2016/05/03/a-tour-through-tool-improvements-in-sql-server-2016/&#34;&gt;improvements in the SQL Server tools&lt;/a&gt; coming as part of SQL Server 2016. I think the nicest improvement here is &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt238365.aspx?wt.mc_id=WW_CE_DM_OO_BLOG_NONE&#34;&gt;centralising the downloads&lt;/a&gt;, which have been a nightmare to navigate in the past couple of releases&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Preetam Jinka (VividCortex) discusses the benefits that come from being able to &lt;a href=&#34;https://www.vividcortex.com/blog/how-vividcortex-uses-the-new-generated-virtual-columns-feature-in-mysql&#34;&gt;index virtual columns&lt;/a&gt;, available since MySQL 5.7.8&lt;/li&gt;
+&lt;li&gt;Peter Zaitsev (Percona) shares &lt;a href=&#34;https://www.percona.com/blog/2016/05/03/best-practices-for-configuring-optimal-mysql-memory-usage/&#34;&gt;Best Practices for Configuring Optimal MySQL Memory Usage&lt;/a&gt;. There&amp;rsquo;s no surprises here, just good, practical advice&lt;/li&gt;
+&lt;li&gt;In the same vein, Vadim Tkachenko (Percona) looks at how &lt;a href=&#34;https://www.percona.com/blog/2016/05/06/cpu-governor-performance/&#34;&gt;CPU governor performance affects MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MariaDB has a series of blogs about an upcoming &lt;a href=&#34;https://mariadb.com/blog/mariadb-columnstore-new-beginning&#34;&gt;ColumnStore feature&lt;/a&gt; - an adaptation of &lt;a href=&#34;https://en.wikipedia.org/wiki/InfiniDB&#34;&gt;InfiniDB&lt;/a&gt; - targeted for beta availability later this month&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The title is a bit misleading, but ArsTechnica&amp;rsquo;s &lt;a href=&#34;Power tools: Sorting through the crowded specialized database toolbox&#34;&gt;&amp;laquo;Power tools: Sorting through the crowded specialized database toolbox&amp;raquo;&lt;/a&gt; provides some useful notes about how a few companies chose their Key Value Store databases&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>This week in the DBA Universe - 2016-04-22</title>
@@ -24,7 +56,7 @@
 
 &lt;p&gt;Anyone interested in seeing updates for Oracle, DB2, PostgreSQL or Sybase ASE? I have to work with all of them now. Let me know!&lt;/p&gt;
 
-&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+&lt;h2 id=&#34;sql-server:27376ff6153512b82331e437a0c029df&#34;&gt;SQL Server&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I missed this by a day or two with my last blog, but I&amp;rsquo;m really excited to see that &lt;a href=&#34;https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/31/microsoft-sql-server-developer-edition-is-now-free/&#34;&gt;SQL Server Developer Edition is now free&lt;/a&gt;&lt;/li&gt;
@@ -33,7 +65,7 @@
 &lt;li&gt;Microsoft has &lt;a href=&#34;https://www.brentozar.com/archive/2016/04/breaking-news-literally-sql-clr-support-removed-azure-sql-db/&#34;&gt;removed SQL CLR support from Azure SQL Database&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+&lt;h2 id=&#34;mysql:27376ff6153512b82331e437a0c029df&#34;&gt;MySQL&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://mariadb.org/mariadb-10-2-0-alpha-now-available/&#34;&gt;MariaDB 10.2 Alpha&lt;/a&gt; is now available. It&amp;rsquo;s create to see &lt;a href=&#34;http://ocelot.ca/blog/blog/2016/04/18/mariadb-10-2-window-functions/&#34;&gt;window functions&lt;/a&gt; even if they&amp;rsquo;re still quite buggy, though I&amp;rsquo;d rather have &lt;a href=&#34;https://jira.mariadb.org/browse/MDEV-8308&#34;&gt;CTEs&lt;/a&gt;&amp;hellip;&lt;/li&gt;
@@ -42,7 +74,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.percona.com/blog/2016/04/01/percona-xtrabackup-2-4-2-now-available/&#34;&gt;Percona XtraBackup 2.4.2&lt;/a&gt; is generally available&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+&lt;h2 id=&#34;general:27376ff6153512b82331e437a0c029df&#34;&gt;General&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Vadim Tkachenko and Peter Zaitsev (Percona) have done an exhaustive &lt;a href=&#34;https://www.percona.com/blog/2016/03/09/evaluating-database-compression-methods/&#34;&gt;analysis on different compression algorithms&lt;/a&gt; (&lt;a href=&#34;https://www.percona.com/blog/2016/04/13/evaluating-database-compression-methods-update/&#34;&gt;+Update&lt;/a&gt; - though the results don&amp;rsquo;t appear to have immediate practical implications&lt;/li&gt;
@@ -97,7 +129,7 @@
 
 &lt;p&gt;I was wrong about things getting more quiet leading up to Christmas. There&amp;rsquo;s been a lot of fascinating content in the three weeks since my last post.&lt;/p&gt;
 
-&lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+&lt;h2 id=&#34;sql-server:27376ff6153512b82331e437a0c029df&#34;&gt;SQL Server&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Greg Low (SQLDownUnder) offers some video of &lt;a href=&#34;http://sqlblog.com/blogs/greg_low/archive/2015/12/11/my-sessions-from-ignite-australia-on-the-gold-coast-now-online.aspx&#34;&gt;presentations he did for Microsoft Ignite&lt;/a&gt; - the &amp;laquo;things I wish developers knew about SQL Server&amp;raquo; presentation looks particularly interesting&lt;/li&gt;
@@ -107,7 +139,7 @@
 &lt;li&gt;On that note, the SQL Server Team has released &lt;a href=&#34;http://blogs.technet.com/b/dataplatforminsider/archive/2015/11/30/introducing-sql-server-2016-community-technology-preview-3-1.aspx&#34;&gt;SQL Server 2016 CTP 3.1&lt;/a&gt;. Most of the improvements seem focused on Business Intelligence / Data Analysis&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+&lt;h2 id=&#34;mysql:27376ff6153512b82331e437a0c029df&#34;&gt;MySQL&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Percona have released &lt;a href=&#34;https://www.percona.com/blog/2015/12/04/percona-server-5-6-27-76-0-is-now-available/&#34;&gt;Percona Server 5.6.27&lt;/a&gt; and a bugfix for &lt;a href=&#34;https://www.percona.com/blog/2015/12/04/percona-server-5-5-46-37-6-is-now-available/&#34;&gt;5.5.46&lt;/a&gt;, and MariaDB have released &lt;a href=&#34;https://blog.mariadb.org/mariadb-5-5-47-and-updated-connectors-now-available/&#34;&gt;MariaDB 5.5.47&lt;/a&gt; as well. All of these are pretty much bug fix releases, including the upstream changes in MySQL 5.5.47&lt;/li&gt;
@@ -122,7 +154,7 @@
 &lt;li&gt;Yoav Abrahami (Wix) discusses the viability of &lt;a href=&#34;http://engineering.wix.com/2015/12/10/scaling-to-100m-mysql-is-a-better-nosql/&#34;&gt;MySQL as a NoSQL engine&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+&lt;h2 id=&#34;general:27376ff6153512b82331e437a0c029df&#34;&gt;General&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Brent Ozar (BrentOzar.com) ponders &lt;a href=&#34;http://www.brentozar.com/archive/2015/12/how-many-servers-can-one-person-manage/&#34;&gt;how many servers&lt;/a&gt; a single DBA can comfortably manage. The deeper down you go, the less broadly you can work&lt;/li&gt;

@@ -5,28 +5,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>This week in the DBA Universe - 2016-04-22  &middot; dba-team - musings on database administration</title>
+  <title>This week in the DBA Universe - 2016-05-09  &middot; dba-team - musings on database administration</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="description" content="Microsoft opens up, and MySQL is a document database. Everything I know is wrong." />
+<meta name="description" content="In which SQL Server 2016 gets a release date, and not much else happens" />
 
 <meta name="keywords" content="week_in_review, dba, ">
 
 
-<meta property="og:title" content="This week in the DBA Universe - 2016-04-22  &middot; dba-team - musings on database administration ">
+<meta property="og:title" content="This week in the DBA Universe - 2016-05-09  &middot; dba-team - musings on database administration ">
 <meta property="og:site_name" content="dba-team - musings on database administration"/>
-<meta property="og:url" content="http://dba-team.com/post/2016/4/22/week_in_review/" />
+<meta property="og:url" content="http://dba-team.com/post/2016/5/9/week_in_review/" />
 <meta property="og:locale" content="en-AU">
 
 
 <meta property="og:type" content="article" />
-<meta property="og:description" content="Microsoft opens up, and MySQL is a document database. Everything I know is wrong."/>
-<meta property="og:article:published_time" content="2016-04-22T21:23:26&#43;08:00" />
-<meta property="og:article:modified_time" content="2016-04-22T21:23:26&#43;08:00" />
+<meta property="og:description" content="In which SQL Server 2016 gets a release date, and not much else happens"/>
+<meta property="og:article:published_time" content="2016-05-09T22:20:01&#43;08:00" />
+<meta property="og:article:modified_time" content="2016-05-09T22:20:01&#43;08:00" />
 
   
     
@@ -42,20 +42,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "This week in the DBA Universe - 2016-04-22",
+    "headline": "This week in the DBA Universe - 2016-05-09",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-04-22",
-    "description": "Microsoft opens up, and MySQL is a document database. Everything I know is wrong.",
-    "wordCount":  300 
+    "datePublished": "2016-05-09",
+    "description": "In which SQL Server 2016 gets a release date, and not much else happens",
+    "wordCount":  192 
   }
 </script>
 
 
 
-<link rel="canonical" href="http://dba-team.com/post/2016/4/22/week_in_review/" />
+<link rel="canonical" href="http://dba-team.com/post/2016/5/9/week_in_review/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://dba-team.com/touch-icon-144-precomposed.png">
 <link href="http://dba-team.com/favicon.png" rel="icon">
@@ -146,21 +146,21 @@
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="text-center">
 
-    <h1>This week in the DBA Universe - 2016-04-22
+    <h1>This week in the DBA Universe - 2016-05-09
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2016-04-22">22 Apr, 2016</time>
+  <time datetime="2016-05-09">9 May, 2016</time>
 </small>
 
 
   <small>
     &middot; by Nathan J
   
-  &middot; Read in about 2 min
-  &middot; (300 Words)
+  &middot; Read in about 1 min
+  &middot; (192 Words)
 </small>
 
 
@@ -183,34 +183,26 @@
   <div class="container content">
   
 
-<p>So, it&rsquo;s been another month. I&rsquo;ll have to find a title better than &laquo;this week in&hellip;&raquo;.</p>
-
-<p>Anyone interested in seeing updates for Oracle, DB2, PostgreSQL or Sybase ASE? I have to work with all of them now. Let me know!</p>
-
-<h2 id="sql-server:27376ff6153512b82331e437a0c029df">SQL Server</h2>
+<h2 id="sql-server">SQL Server</h2>
 
 <ul>
-<li>I missed this by a day or two with my last blog, but I&rsquo;m really excited to see that <a href="https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/31/microsoft-sql-server-developer-edition-is-now-free/">SQL Server Developer Edition is now free</a></li>
-<li>Erik Darling (BrentOzar.com) offers advice on how to use <a href="https://ola.hallengren.com/">Ola Hallengren&rsquo;s great DBA scripts</a> to <a href="http://www.brentozar.com/archive/2016/04/updating-statistics-ola-hallengrens-scripts/">update statistics without doing index maintenance</a>. With modern storage systems you might find that index maintenance is costing you a lot more than it&rsquo;s helping</li>
-<li><a href="https://blogs.technet.microsoft.com/dataplatforminsider/2016/04/15/sql-server-2016-release-candidate-3-now-available/">SQL Server 2016 Release Candidate 3</a> is now available, and is being flagged as the &laquo;final&raquo; release candidate before official release</li>
-<li>Microsoft has <a href="https://www.brentozar.com/archive/2016/04/breaking-news-literally-sql-clr-support-removed-azure-sql-db/">removed SQL CLR support from Azure SQL Database</a></li>
+<li>We have a <a href="https://blogs.technet.microsoft.com/dataplatforminsider/2016/05/02/get-ready-sql-server-2016-coming-on-june-1st/">release date for SQL Server 2016</a> - June 1. There&rsquo;s a lot of new BI/Analytics related features, but Brent Ozar has a good <a href="https://www.brentozar.com/archive/2016/05/sql-server-2016-release-date-june-1-2016/">summary of the highlights</a> that most operational DBAs would care about</li>
+<li>Ayo Olubeko (Microsoft) blogs about <a href="https://blogs.technet.microsoft.com/dataplatforminsider/2016/05/03/a-tour-through-tool-improvements-in-sql-server-2016/">improvements in the SQL Server tools</a> coming as part of SQL Server 2016. I think the nicest improvement here is <a href="https://msdn.microsoft.com/en-us/library/mt238365.aspx?wt.mc_id=WW_CE_DM_OO_BLOG_NONE">centralising the downloads</a>, which have been a nightmare to navigate in the past couple of releases<br /></li>
 </ul>
 
-<h2 id="mysql:27376ff6153512b82331e437a0c029df">MySQL</h2>
+<h2 id="mysql">MySQL</h2>
 
 <ul>
-<li><a href="https://mariadb.org/mariadb-10-2-0-alpha-now-available/">MariaDB 10.2 Alpha</a> is now available. It&rsquo;s create to see <a href="http://ocelot.ca/blog/blog/2016/04/18/mariadb-10-2-window-functions/">window functions</a> even if they&rsquo;re still quite buggy, though I&rsquo;d rather have <a href="https://jira.mariadb.org/browse/MDEV-8308">CTEs</a>&hellip;</li>
-<li><a href="http://mysqlserverteam.com/mysql-5-7-12-part-1-more-than-a-maintenance-release/">MySQL 5.7.12</a> is also now available, and introduces significant new features. It can <a href="https://www.percona.com/blog/2016/04/15/mysql-document-store-developments/">act as a document store</a>, offers <a href="http://mysqlserverteam.com/mysql-5-7-12-part-2-improving-the-mysql-protocol/">a new API</a>, an <a href="http://mysqlserverteam.com/mysql-5-7-12-part-4-a-new-mysql-command-line-shell/">entirely new interactive shell</a> with JS and Python support, and the introduction of a <a href="http://dev.mysql.com/downloads/connector/nodejs/1.0.html">node.js connector</a> alongside the updated <a href="http://insidemysql.com/announcing-mysql-connectorj-6-0/">Java</a> and <a href="http://insidemysql.com/announcing-mysql-connectorj-6-0/">.NET</a> connectors</li>
-<li>Percona have bundled together their own monitoring scripts with <a href="https://prometheus.io/">Prometheus</a> and <a href="http://grafana.org/">Grafana</a> to produce a beta of a new <a href="https://www.percona.com/blog/2016/04/18/percona-monitoring-and-management/">Percona Monitoring and Management</a> tool</li>
-<li><a href="https://www.percona.com/blog/2016/04/01/percona-xtrabackup-2-4-2-now-available/">Percona XtraBackup 2.4.2</a> is generally available</li>
+<li>Preetam Jinka (VividCortex) discusses the benefits that come from being able to <a href="https://www.vividcortex.com/blog/how-vividcortex-uses-the-new-generated-virtual-columns-feature-in-mysql">index virtual columns</a>, available since MySQL 5.7.8</li>
+<li>Peter Zaitsev (Percona) shares <a href="https://www.percona.com/blog/2016/05/03/best-practices-for-configuring-optimal-mysql-memory-usage/">Best Practices for Configuring Optimal MySQL Memory Usage</a>. There&rsquo;s no surprises here, just good, practical advice</li>
+<li>In the same vein, Vadim Tkachenko (Percona) looks at how <a href="https://www.percona.com/blog/2016/05/06/cpu-governor-performance/">CPU governor performance affects MySQL</a></li>
+<li>MariaDB has a series of blogs about an upcoming <a href="https://mariadb.com/blog/mariadb-columnstore-new-beginning">ColumnStore feature</a> - an adaptation of <a href="https://en.wikipedia.org/wiki/InfiniDB">InfiniDB</a> - targeted for beta availability later this month<br /></li>
 </ul>
 
-<h2 id="general:27376ff6153512b82331e437a0c029df">General</h2>
+<h2 id="general">General</h2>
 
 <ul>
-<li>Vadim Tkachenko and Peter Zaitsev (Percona) have done an exhaustive <a href="https://www.percona.com/blog/2016/03/09/evaluating-database-compression-methods/">analysis on different compression algorithms</a> (<a href="https://www.percona.com/blog/2016/04/13/evaluating-database-compression-methods-update/">+Update</a> - though the results don&rsquo;t appear to have immediate practical implications</li>
-<li>Diginomica offers a write-up on the promise of <a href="http://diginomica.com/2016/04/11/do-gpu-optimized-databases-threaten-the-hegemony-of-oracle-splunk-and-hadoop/">GPU-accelerated databases</a></li>
-<li>Microsoft&rsquo;s Insider program is already offering support for <a href="http://arstechnica.com/information-technology/2016/04/first-windows-10-preview-with-bash-support-is-out-now/">native Linux bash on Windows</a>. Maybe I <em>can</em> have my cake and eat it too!</li>
+<li>The title is a bit misleading, but ArsTechnica&rsquo;s <a href="Power tools: Sorting through the crowded specialized database toolbox">&laquo;Power tools: Sorting through the crowded specialized database toolbox&raquo;</a> provides some useful notes about how a few companies chose their Key Value Store databases<br /></li>
 </ul>
 
 </div>
@@ -223,18 +215,12 @@
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="http://dba-team.com/post/2016/3/week_in_review/" title="This week in the DBA Universe - 2016-03-29">
+          <a href="http://dba-team.com/post/2016/4/22/week_in_review/" title="This week in the DBA Universe - 2016-04-22">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
     
 
-    
-      <li class="next">
-        <a href="http://dba-team.com/post/2016/5/9/week_in_review/" title="This week in the DBA Universe - 2016-05-09">
-            Next <span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
     
     </ul> </nav>
   
